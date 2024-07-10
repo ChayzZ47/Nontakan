@@ -1,0 +1,41 @@
+﻿@* About.cshtml *@
+
+@{
+    ViewData["Title"] = "About Us";
+}
+
+<style>
+    body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 20vh;
+  background-color: #f0f5f9; /* เปลี่ยนสีพื้นหลัง */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* เปลี่ยนฟอนต์ */
+}
+
+.contact-info { /* แก้ไขส่วนนี้ */
+  text-align: center; /* จัดข้อความทั้งหมดใน contact-info ให้อยู่ตรงกลาง */
+}
+
+h1, p { /* จัดกลุ่ม selector */
+  text-align: center;
+}
+
+h1 {
+  color: #CC6600; /* เปลี่ยนสีหัวข้อ */
+  font-size: 3em; /* ปรับขนาดตัวอักษร */
+}
+
+p {
+  font-size: 1.2em; /* ปรับขนาดตัวอักษร */
+  line-height: 1.6; /* ปรับระยะห่างระหว่างบรรทัด */
+  margin-bottom: 1em;
+}
+
+</style>
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    Company Nontakan..
+</p>

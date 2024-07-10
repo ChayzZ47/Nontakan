@@ -1,0 +1,50 @@
+﻿@* Contact.cshtml *@
+
+@{
+    ViewData["Title"] = "Contact";
+
+}
+
+<style>
+    body {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 20vh;
+        background-color: #f5f5f5; /* เปลี่ยนสีพื้นหลัง */
+        font-family: 'Roboto', sans-serif; /* เปลี่ยนฟอนต์ */
+    }
+
+    .contact-info {
+        text-align: center; /* จัดข้อความทั้งหมดใน contact-info ให้อยู่ตรงกลาง */
+    }
+
+
+    .qr-code {
+        width: 150px; /* ปรับขนาด QR Code ตามต้องการ */
+        height: 150px;
+        margin: 1em auto; /* จัดกึ่งกลาง QR Code */
+    }
+</style>
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="contact-info">
+    <div>
+        <i class="fas fa-phone"></i>
+        <span>191-9999999</span>
+    </div>
+
+    <div>
+        <i class="fas fa-envelope"></i>
+        <span>Nontakan0@gmail.com</span>
+    </div>
+
+    <div>
+        <i class="fas fa-map-marker-alt"></i>
+        <span>เลขที่ 43 ราษฏร์อุทิศ ซอย 10 ตำบลหาดใหญ่ อำเภอหาดใหญ่ จังหวัดสงขลา 90110</span>
+    </div>
+
+    <div class="qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://line.me/ti/p/~yourlineid" alt="QR Code Line">
+    </div>
+</div>

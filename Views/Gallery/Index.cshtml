@@ -1,0 +1,95 @@
+﻿@* Gallery.cshtml *@
+
+@{
+    ViewData["Title"] = "Gallery";
+}
+
+<style>
+    body {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 20vh;
+        background-color: #f5f5f5; /* เปลี่ยนสีพื้นหลัง */
+        font-family: 'Roboto', sans-serif; /* เปลี่ยนฟอนต์ */
+    }
+
+    h1 {
+        color: #CC6600; /* เปลี่ยนสีหัวข้อ */
+        font-size: 3em; /* ปรับขนาดตัวอักษร */
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .gallery-item {
+        width: 250px; /* ปรับขนาดรูป */
+        height: 250px; /* ปรับขนาดรูป */
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+            .gallery-item img:hover {
+                transform: scale(1.1);
+            }
+</style>
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="gallery-container">
+    @* ตัวอย่างรูปภาพ *@
+    <div class="gallery-item">
+        <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0021/2934/brand.gif?itok=b0P8K6z2" alt="รูปภาพที่ 1">
+    </div>
+    <div class="gallery-item">
+        <img src="https://www.tokyoeki-1bangai.co.jp/uploads/images/resized/345x240/tokyoeki1bangai/000002/000002/9603abac.png" alt="รูปภาพที่ 2">
+    </div>
+    <div class="gallery-item">
+        <img src="https://i.blogs.es/fab869/dragon-ball-z-asi-se-veia-el-logo-original-del-anime-que-descarto-akira-toriyama/1366_2000.jpeg" alt="รูปภาพที่ 3">
+    </div>
+    <div class="gallery-item">
+        <img src="https://www.europafm.ro/wp-content/uploads/2017/10/star-wars.jpg" alt="รูปภาพที่ 4">
+    </div>
+    <div class="gallery-item">
+        <img src="https://inwfile.com/s-a/2slr70.jpg" alt="รูปภาพที่ 5">
+    </div>
+    <div class="gallery-item">
+        <img src="https://wiki.anime-os.com/image/2019/04/Nanatsu-no-Taizai-Wrath-of-the-Gods.jpg" alt="รูปภาพที่ 6>
+    </div>
+    <div class="gallery-item">
+        <img src="https://wallpapers.com/images/featured/one-piece-logo-e6aw12asz5hmkzi5.jpg" alt="รูปภาพที่ 7">
+    </div>
+    <div class="gallery-item">
+        <img src="https://wallpapers.com/images/featured/one-piece-logo-e6aw12asz5hmkzi5.jpg" alt="รูปภาพที่ 8">
+    </div>
+    <div class="gallery-item">
+        <img src="https://i.pinimg.com/originals/68/60/e2/6860e2aa19791ae3e4256d4e02b85953.png" alt="รูปภาพที่ 9">
+    </div>
+    <div class="gallery-item">
+        <img src="https://i.pinimg.com/736x/b5/49/d4/b549d4cc0d56e0d587ad0eb8abb11cfd.jpg" alt="รูปภาพที่ 10">
+    </div>
+    <div class="gallery-item">
+        <img src="https://i.pinimg.com/originals/7d/ef/c5/7defc544208a91c1c500eb150cfa6663.jpg" alt="รูปภาพที่ 11">
+    </div>
+    <div class="gallery-item">
+        <img src="https://i.pinimg.com/originals/a2/1d/c6/a21dc64e25e8b5247df78acb16ca17d1.jpg" alt="รูปภาพที่ 12">
+    </div>
+    <div class="gallery-item">
+        <img src="https://senpaitv.com/wp-content/uploads/2024/03/BIG_HERO_TORIKO_MOBILE.png" alt="รูปภาพที่ 13">
+    </div>
+    @* เพิ่มรูปภาพอื่นๆ ตามต้องการ *@
+</div>

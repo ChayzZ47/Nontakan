@@ -1,0 +1,58 @@
+﻿@* Articles.cshtml *@
+
+@{
+    ViewData["Title"] = "Articles";
+}
+
+<style>
+    body {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 20vh;
+        background-color: #f8f8f8; /* เปลี่ยนสีพื้นหลัง */
+        font-family: 'Arial', sans-serif; /* เปลี่ยนฟอนต์ */
+    }
+
+    h1, h2 {
+        color: #222; /* เปลี่ยนสีหัวข้อ */
+        font-weight: bold;
+    }
+
+    h1 {
+        color: #669933;
+        text-align: center;
+        font-size: 2.5em; /* ปรับขนาดตัวอักษร */
+        margin-bottom: 1em;
+    }
+
+    h2 {
+        color: #FF0033;
+        text-align: center;
+        font-size: 1.8em; /* ปรับขนาดตัวอักษร */
+        margin-top: 2em; /* เพิ่มระยะห่างด้านบน */
+    }
+
+    article {
+        text-align: center;
+        margin-bottom: 2em; /* เพิ่มระยะห่างระหว่างบทความ */
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.1em; /* ปรับขนาดตัวอักษร */
+        line-height: 1.6; /* ปรับระยะห่างระหว่างบรรทัด */
+    }
+</style>
+
+<h1>@ViewData["Title"]</h1>
+
+@* ตัวอย่างบทความ *@
+<article>
+    <h2>Chapter 1</h2>
+    <p>Beginning of...</p>
+</article>
+
+<article>
+    <h2>Chapter 2</h2>
+    <p>The end of the story</p>
+</article>
